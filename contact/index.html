@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Letter - Simple Sign Up Form</title>
+<!-- 
+
+Letter Template 
+
+https://templatemo.com/tm-510-letter
+
+
+
+Template Re-distribution is NOT allowed.
+
+-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/templatemo-style.css">
+  
+  <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+		
+	</head>
+
+	<body>
+
+			<div id="particles-js"></div>
+		
+			<ul class="cb-slideshow">
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+
+			<div class="container-fluid">
+				<div class="row cb-slideshow-text-container ">
+					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+					<br><br><br>
+					<header class="mb-5"><h1>Contact:</h1></header>
+					<P class="mb-5">Provide us with necessary details and we will be in touch with you soon.......</P>
+					
+                    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<table style="width:550px;border:500;" cellpadding="20" cellspacing="10">
+<tr> <td>
+</td> <td>
+<input name="Name" type="text" maxlength="43" style="width:250px;" />
+<P class="mb-5">Name*</P>
+</td> </tr> <tr> <td>
+</td> <td>
+<input name="PhoneNumber" type="text" maxlength="43" style="width:250px;" />
+<P class="mb-5">Phone Number</P>
+</td> </tr> <tr> <td>
+</td> <td>
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" />
+<P class="mb-5">Email Address*</P>
+</td> </tr> <tr> <td>
+</td> <td>
+<textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea>
+<P class="mb-5">Comments*</P>
+</td> </tr> <tr><td>
+
+<input name="skip_Submit" type="submit" value="Submit" />
+<script src="https://www.100forms.com/js/FORMKEY:9862C8AE9GCS/SEND:arejaswebdev@gmail.com" type="text/javascript"></script>
+</td> </tr>
+</table>
+</form>
+					<div class="tm-social-icons-container text-xs-center">
+	                    <a href="http://www.facebook.com/" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+	                    <a href="http://www.twitter.com/" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+	                    <a href="http://www.linkedin.com/" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+	                </div>
+
+					</div>
+				</div>	
+			</div>	
+	</body>
+
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</html>
