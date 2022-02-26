@@ -25,7 +25,7 @@
 					<input type="password" pattern=".{8,}" id="password" placeholder="Your password">
 					<i class='bx bx-lock-alt' ></i>
 				</div>
-				<span class="help-text">At least 8 characters</span>
+				<span class="help-text">At least 8 characters, one number, one uppercase and one lowercase </span>
 			</div>
 			<button type="submit" class="btn-submit">Login</button>
 			<p>I don't have an account. <a href="#" onclick="switchForm('register', event)">Register</a></p>
@@ -43,10 +43,10 @@
 			<div class="form-group">
 				<label for="password">Password</label>
 				<div class="input-group">
-					<input type="password" pattern=".{8,}" id="password" placeholder="Your password">
+					<input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 					<i class='bx bx-lock-alt' ></i>
 				</div>
-				<span class="help-text">At least 8 characters</span>
+				<span class="help-text">At least 8 characters, one number, one uppercase and one lowercase</span>
 			</div>
 			<div class="form-group">
 				<label for="confirm-pass">Confirm password</label>
@@ -60,6 +60,7 @@
 			<p>I already have an account. <a href="#" onclick="switchForm('login', event)">Login</a></p>
 		</form>
 	</div>
+	
 
 	<script src="script.js"></script>
 </body>

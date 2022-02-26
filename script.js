@@ -16,3 +16,5 @@ const registerConfirmPassword = document.querySelector('form.register #confirm-p
 registerPassword.addEventListener('input', function () {
 	registerConfirmPassword.pattern = `${this.value}`;
 })
+
+
